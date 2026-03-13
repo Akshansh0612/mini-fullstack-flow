@@ -32,6 +32,19 @@ app.post("/api/register",(req,res)=>{
     res.json({msg:"registration successfull"});
 });
 
+// login Api
+
+app.post("/api/register",(req,res)=>{
+    const{username:Password}=req.body;
+
+    // basically finding the matching user
+    const user=user.find(user=>user.username===username && user.Password===Password);
+    if(!username){
+        return res.json({msg:"invalid credentials"})
+    }
+    res.json({ message: "Login successful" });
+})
+
 
 
 
