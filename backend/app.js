@@ -45,13 +45,10 @@ app.post("/api/register",(req,res)=>{
     res.json({ message: "Login successful" });
 })
 
-
-
-
-
-
-
 const PORT=3001;
 app.listen(PORT,()=>{
     console.log(`server works successfully http://localhost:${PORT}`)
 })
+
+
+// backend part done
